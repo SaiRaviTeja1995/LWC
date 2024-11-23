@@ -1,0 +1,13 @@
+Sfdx COmmands:
+
+1. Create Project:  sfdx force:project:create -n ProjectName
+2. Cli Update :sfdx update
+3. Connect Dev Org: sfdx org login web -r https://login.salesforce.com -a SaiLWC
+4. Connect Dev Org: sfdx org login web -r https://test.salesforce.com
+5. Set Default org: sfdx force:config:set defaultusername=LWC
+6. list all the orgs connected to your Salesforce CLI (SFDX): sfdx org list --all
+7. set Default Org: sfdx config set defaultusername=SaiLWC
+
+8. create LWc component: sfdx lightning generate component --type lwc --name myLightningWebComponent --output-dir force-app/main/default/lwc
+
+9. Deploy lwc component to Dev org: sfdx project deploy start -p force-app/main/default/lwc/myLightningWebComponent -u SaiLWC
